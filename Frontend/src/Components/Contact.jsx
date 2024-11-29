@@ -35,7 +35,7 @@ export default function Contact() {
 
   };
   return (
-    <div id='contact' className='bg-gradient-to-r from-pink-500 to-purple-500 text-white'>
+    <div id='contact' className='bg-gray-200'>
       <div className='flex flex-col items-center justify-center'>
       <div className='mt-20 text-4xl md:text-4xl min-[900px]:text-5xl items-center place-content-center flex min-[600px]:p-8'>Contact</div>
       <div className='max-[1048px]:hidden md:text-xl min-[900px]:text-2xl items-center place-content-center flex'>Feel free to Contact me by submitting the form below and I will get back to you as soon as</div>
@@ -45,7 +45,7 @@ export default function Contact() {
       <div className='p-8 min-[900px]:pl-64 min-[900px]:pr-64'>
       <form 
        onSubmit={handleSubmit} 
-      className="min-w-md mx-auto p-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-md shadow-md">
+      className="min-w-md mx-auto p-4 bg-gray-300 rounded-md shadow-md">
       <div className="">
         <label htmlFor="name" className="block text-sm font-medium ">
           Name
@@ -96,7 +96,7 @@ export default function Contact() {
 
       <button
         type="submit"
-        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="bg-gray-400 font-medium text-xl px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         Submit
       </button>

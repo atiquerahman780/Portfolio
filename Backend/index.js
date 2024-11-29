@@ -1,7 +1,8 @@
-import mongoose from 'mongoose';
+
 import dotenv from 'dotenv';
 dotenv.config();
 import { createRequire } from 'module';
+import mongoose from 'mongoose';
 import path from 'path';
 import { fileURLToPath } from 'url';
 const require = createRequire(import.meta.url);

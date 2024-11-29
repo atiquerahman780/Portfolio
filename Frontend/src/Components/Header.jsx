@@ -9,10 +9,10 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className='sticky top-0 bg-gradient-to-r from-pink-500 to-purple-500 flex justify-between place-items-center text-white'>
+    <div className='sticky top-0 flex justify-between place-items-center bg-gray-300 h-16 '>
       <div>
-        <img className="w-16 h-16 rounded-full inline ml-4 md:ml-8" src={image} alt="profile Image" />
-        <span className='ml-2'>Atique Ur Rahman</span>
+        {/* <img className="w-16 h-16 rounded-full inline ml-4 md:ml-8" src={image} alt="profile Image" /> */}
+        <span className='ml-4 font-medium text-xl '>Atique Ur Rahman</span>
       </div>
       <div className='hidden md:flex'> 
         <Link 
@@ -52,7 +52,7 @@ export default function Header() {
 
       {/* Sidebar */}  
       <div
-        className={`fixed top-0 right-0 w-64 bg-gray-800 text-white shadow-lg transform   ${
+        className={`fixed top-0 right-0 w-64 bg-gray-200 shadow-lg transform   ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -69,7 +69,7 @@ export default function Header() {
         duration={1000} 
         
       >
-        <button className="m-2 p-2 bg-red-500 rounded-md w-48">
+        <button className="m-2 p-2 bg-gray-300 rounded-md w-48">
             Home
           </button>
       </Link> 
@@ -78,7 +78,7 @@ export default function Header() {
         smooth={true} 
         duration={1000} 
       >
-        <button className="m-2 p-2 bg-red-500 rounded-md w-48">
+        <button className="m-2 p-2 bg-gray-300 rounded-md w-48">
             About
           </button>
       </Link>
@@ -88,7 +88,7 @@ export default function Header() {
         smooth={true} 
         duration={1000} 
       >
-        <button className="m-2 p-2 bg-red-500 rounded-md w-48">
+        <button className="m-2 p-2 bg-gray-300 rounded-md w-48">
             Projects
           </button>
       </Link>
@@ -98,7 +98,7 @@ export default function Header() {
         smooth={true} 
         duration={1000} 
       >
-        <button className="m-2 p-2 bg-red-500 rounded-md w-48">
+        <button className="m-2 p-2 bg-gray-300 rounded-md w-48">
             Contact
           </button>
       </Link>
