@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../assets/Untitled design.png'
+import focusontoday from '../assets/same.png'
 
 export default function Projects() {
   return (
@@ -23,6 +24,23 @@ export default function Projects() {
       <button onClick={() => window.open("https://posti.shop/", "_blank")} className='bg-gray-400 pt-2 pb-2 mt-8 pl-8 pr-8 font-medium text-xl rounded-md'>Visit</button>
       </div>
       </div>
+
+      <div className='min-[1048px]:flex justify-around pt-12 pb-24 pl-48 pr-48 max-[1048px]:pl-8 max-[1048px]:pr-8 min-[1048px]:space-x-8 '>
+        
+      <div>
+        <img src={focusontoday} alt="image" />
+        
+      </div>
+      <div>
+      <div className='text-2xl mb-3 font-medium'>Focus on Today</div>
+      <div>This a project built using vanilla JavaScript and deployed on Netlify. The website allows users to set three tasks for the day and mark them as completed using checkmarks for tracking progress.</div>
+      
+      <button onClick={() => window.open("https://imaginative-macaron-e51729.netlify.app/", "_blank")} className='bg-gray-400 pt-2 pb-2 mt-8 pl-8 pr-8 font-medium text-xl rounded-md'>Visit</button>
+      </div>
+      </div>
+
+      
     </div>
+    
   )
 }

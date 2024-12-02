@@ -21,10 +21,6 @@ mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log('Connected to MongoDB successfully!'))
   .catch((error) => console.error('Error connecting to MongoDB:', error));
 
-  //  // Create a route that sends a response when visiting the homepage
-  //  app.get('/', (req, res) => {
-  //    res.send("1234");
-  //  });  
 
 
 const Message = mongoose.model('message', {
